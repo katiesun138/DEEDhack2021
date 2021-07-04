@@ -5,11 +5,28 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
     <title>Home Page</title>    
     <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="createEvent.css">
 
 </head>    
-<body >    
+<body   >    
+
+    <header>
+        <div>
+          <h4>COMMUNITY CIRCLE</h4>
+          
+          <nav>
+            <ul>
+              <li><a href="homePage.html">Homepage</a></li>
+              <li><a href="findevents.html">Find Events</a></li>
+              <li><a href="createEvent.html">Create Events</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
     <h1>Welcome!</h1><br>    
-    <div class="login">    
+    <!-- <div class="login">    
     <form id="login" method="get" >  
     </div>
     <div class = "container">
@@ -19,21 +36,32 @@
                 data-toggle = "dropdown">
                 <img src = "https://img.icons8.com/material-rounded/24/000000/list.png"/>
             </button>
-            <div class = "choices">
+            <br><br> -->
+           <!-- <div class = "choices">
                 <a class = "choice" href = "participant.html">Register as a participant</a>
                 <br><br>
                 <a class = "choice" href = "volunteer.html">Register as a volunteer</a>
                 <br><br>
-            </div>  
+            </div>  -->
         </div>
     </div>
           
-        <button type="button-1" name="fE" id="fE" ><a href = "findevents.html">Find Events Near Me! </a></button> 
+        <!--<button type="button-1" name="fE" id="fE" ><a href = "findevents.html">Find Events Near Me! </a></button> 
         <br><br>    
         <label><b>  
         </b>    
         </label>    
-        <button type="button-2" name="cE" id="cE"><a href = "createEvent.html">Create Events! </a></button>
+        <button type="button-2" name="cE" id="cE"><a href = "createEvent.html">Create Events! </a></button>-->
+
+        <a href="participant.html"><input class="but" type="submit" value="Register as a Participant" size="25" style="height:30px;width:160px"></a>
+        <br><br>
+
+        <a href="volunteer.html"><input class="but" type="submit" value="Register as a Volunteer" size="25" style="height:30px;width:160px"></a>
+        <br><br>
+
+        <a href="findevents.html"><input class="but" type="submit" value="Find Events Near Me" size="25" style="height:30px;width:160px"></a>
+        <br><br>
+        <a href="createEvent.html"><input class="but" type="submit" value="Create Event" size="25" style="height:30px;width:160px"></a>
          
     </form>     
 </div>    

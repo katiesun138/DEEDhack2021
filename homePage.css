@@ -3,7 +3,8 @@ body {
     background-repeat :no-repeat ;
     background-size:cover;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 120px;
+    margin-top: 200px;
+    text-align: center;
 }
 
 find/create{
@@ -41,8 +42,16 @@ text-align: center;
 
 }  
 
-a{
-    text-align: center;
+.but{
+    background:#75c8ad;
+	color:#fff;
+	font-size:13px;
+	font-weight:bold; 
+	border:0 none;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+
 }
 
 form {
