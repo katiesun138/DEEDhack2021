@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="createevent.css">
+    <title>Community Circle</title>
+    
+</head>
+
+<header>
+	<div>
+	  <h4>Community Circle</h4>
+	  
+	  <nav>
+	    <ul>
+	      <li><a href="homePage.html">Homepage</a></li>
+	      <li><a href="findevents.html">Find Events</a></li>
+	      <li><a href="createEvent.html">Create Events</a></li>
+	      <li><a href="login.html">Login</a></li>
+	    </ul>
+	  </nav>
+	</div>
+</header>
+
+
+<script>
+	window.onload = function() {
+		const queryString = window.location.search;
+		console.log(queryString);
+		const params = new URLSearchParams(queryString);
+		const title = params.get('title');
+		const date = params.get('date');
+		const time = params.get('time');
+		const location = params.get('location');	
+		const description = params.get('description');
+
+		document.getElementById('titleId').innerHTML = title;
+		document.getElementById('dateId').innerHTML = date;
+		document.getElementById('timeId').innerHTML = time;
+		document.getElementById('locationId').innerHTML = location;
+		document.getElementById('descriptionId').innerHTML = description;
+	};
+</script>
+
+<body>
+	
+	<div class = "box">
+
+		<form class = "content" action="addEvent.html" method="GET">
+			<h2 style="color: #444444">THANK YOU!</h2>
+			<img src="check.png" alt="Error" style="width: 50px;height: 50px;">
+			<h5 style="color: #444444">Your event was created successfully.</h5>
+			<h3><strong>Title:</strong> <span id="titleId"></span></h3>
+			<h3><strong>Date:</strong> <span id="dateId"></span></h3>
+			<h3><strong>Time:</strong> <span id="timeId"></span></h3>
+			<h3><strong>Location: </strong><span id="locationId"></span></h3>
+			<h3><strong>Description:</strong> <span id="descriptionId"></span></h3>
+		</form>
+
+	</div>
+</body>
+</html>

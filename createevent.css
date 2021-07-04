@@ -1,0 +1,149 @@
+body {
+	/* margin: 0px; */
+	text-align: center;
+	background-image: url('https://i.pinimg.com/originals/15/1b/3e/151b3ef6fee45ef0a9a4c1e2526ece65.jpg');
+	background-size: 1680px 1050px;
+	font-family: Arial;
+	
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.content {
+	margin-top: 80px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 80px;
+}
+.content input[type=submit] {
+	/* padding:15px 45px;  */
+	background:#75c8ad;
+	color:#fff;
+	font-size:13px;
+	font-weight:bold; 
+	border:0 none;
+	cursor:pointer;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+}
+
+
+.content input[type=date] {
+	margin-right: 35px;
+
+}
+
+.content input[type=time] {
+	margin-right: 85px;
+}
+
+.box {
+	margin: 150px auto 100px auto;
+	width: 60%;
+	border: 5px rgba(255, 255, 255, 1);
+	border-radius: 10px;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.6);
+	
+}
+
+
+.content label {
+	text-align: left;
+	float: left;
+	font-size: 18px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #444444;
+	margin-left: 10px;
+	
+}
+
+.content label :hover {
+	color: #60a38d;
+	text-decoration: none;
+}
+
+.content h3 {
+	text-align: left;
+	color: #444444;
+	font-weight:lighter;
+}
+
+.content h5 {
+	/* text-align: left; */
+	color: #444444;
+	font-weight:lighter;
+	font-size: large;
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #444444;
+
+}
+
+h4 {
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	float: left;
+	color: #75c8ad;
+}
+
+nav {
+	margin-right: 30px;
+	/* margin-top: 20px; */
+	margin-bottom: 20px;
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 50px;
+	padding-top: 20px;
+	position: relative;
+}
+
+nav ul > li > a {
+	color: #9a9999;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #75c8ad;
+	text-decoration: none;
+}
+
+nav a::before {
+	content: '';
+	display: block;
+	height: 2px;
+	background-color: #75c8ad;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 150ms;
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+form {
+	display: inline-block;
+}

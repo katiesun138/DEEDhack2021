@@ -4,8 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Events</title>
+    <link rel="stylesheet" href="./findevents.css">
+
 </head>
-<body>
-    
+
+<body style="padding-top:100px ;">
+    <div>
+        <header>
+            <div>
+            <h4>COMMUNITY CIRCLE</h4>
+            <nav>
+                <ul>
+                <li><a href="homePage.html">Homepage</a></li>
+                <li><a href="findevents.html">Find Events</a></li>
+                <li><a href="createEvent.html">Create Events</a></li>
+                <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="center">
+        <form action="location" >
+            <input type="text" placeholder="Enter your location" id="textbox">
+            <input type="submit" value="Search" id="buttonsearch" class="content">
+        </form>
+        
+    </div>
+
+    <!-- ADD GOOGLE MAP API -->
+    <!-- <h1>My google map</h1> -->
+    <br>
+    <br>
+    <div id="map"></div>
+    <script>
+        function initMap(){
+            var options = {
+                zoom:13, 
+                center:{lat:49.25, lng:237.01}
+            }
+
+            var map = new google.maps.Map(document.getElementById('map'), options)
+        }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDufwm5rRbETumyShL0kToZmaOllA6dWGg&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+    <h2  style="color:rgba(189, 52, 52, 0.959); margin-left: 90px; font-size: 40px;" class="center">Upcoming Events</h2>
+<div id="scrollable">
+        <!-- event start -->
+        <table>
+            <tr>
+                <td class="picpadding">
+                    <img src="https://prods3.imgix.net/images/articles/2016_05/Featured-Article-Acme-Coffee-Cups-Tekoa-Latte-Cafe-European-Coffee-Ceramics-Mugs.jpg" alt="Latte" width="250" height="180">
+
+                </td>
+                <td class="needspace" style="text-align: 0;"> 
+                    <h2>Walk and Chat With Coffee</h2> 
+                    <h3>Time: July 21st from 6 - 8 PM</h3>
+                    <h3>Meetup Location: 463 Columbia Street</h3>
+                    <p>A group of 5 High School Seniors who want to get to know you! Come join our walk and look forward to sharing stories and grabbing something warm to drink :) </p>
+                </td>
+                <td>
+                    <a href="success.html"><input type="button" value="Register" class="button"></a> 
+                </td>
+            </tr>
+        </table>    
+        <!-- event end -->
+    <br>
+
+        <!-- event start -->
+        <table>
+            <tr>
+                <td class="picpadding">
+                    <img src="https://trcaca.s3.ca-central-1.amazonaws.com/app/uploads/2021/01/28183608/community-walking-groups.jpg" width="250" height="180" alt="picnic" >
+
+                </td>
+                <td class="needspace" style="text-align: 0;"> 
+                    <h2>Weekly Neighborhood Walk</h2> 
+                    <h3>Time: July 22st from 5 - 7 PM</h3>
+                    <h3>Meetup Location: 122 Cook Street</h3>
+                    <p>Join us for our weekly evening walks! We will be walking and touring around the Bradly Neighbourhood. Meet new faces and make friends!   </p>
+                </td>
+                <td>
+                    <a href="success.html"><input type="button" value="Register" class="button"></a> 
+                </td>
+            </tr>
+        </table>    
+        <!-- event end -->
+    <br>
+        <!-- event start -->
+        <table>
+            <tr>
+                <td class="picpadding">
+                    <img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1598396693000/photosp/a63b06e3-8e87-4252-b2a7-96100988e376/stock-photo-party-picnic-barbecue-weekend-birthday-party-family-time-family-gathering-summer-party-people-in-the-park-a63b06e3-8e87-4252-b2a7-96100988e376.jpg" width="250" height="180" alt="picnic" >
+
+                </td>
+                <td class="needspace" style="text-align: 0;" id="clicked"> 
+                    <h2>Community Picnic</h2> 
+                    <h3>Time: July 25st from 5 - 7 PM</h3>
+                    <h3>Meetup Location: 906 Renfew Avenue</h3>
+                    <p>We are a group of friendly University students who are hosting a community picnic, and you are invited! Enjoy a night of music, making friends, and laughter. Food is provided, but feel free to bring more to share :) </p>
+                </td>
+                <td>
+                    <a href="success.html"><input type="button" value="Register" class="button"></a> 
+                </td>
+            </tr>
+        </table>    
+        <!-- event end -->
+    <br>
+        <!-- event start -->
+        <table>
+            <tr>
+                <td class="picpadding">
+                    <img src="https://www.littledayout.com/wp-content/uploads/e09-20170603-Little-Day-Outing-to-Castle-Beach-91-2.jpg?x43858" alt="beachday" width="250" height="180">
+
+                </td>
+                <td class="needspace" style="text-align: 0;"> 
+                    <h2>Beach Day with Second Grade Students</h2> 
+                    <h3>Time: July 29st from 9 - 10 AM</h3>
+                    <h3>Meetup Location: 900 Howe Street</h3>
+                    <p>We are a second grade class of 20 students and we are inviting you to accompany us to the beach! We would love to get to know you and spend time in the Sun. Come join our walk and playday at Kitslano beach and look forward to build sandcastles :) </p>
+                </td>
+                <td>
+                    <a href="success.html"><input type="button" value="Register" class="button"></a> 
+                </td>
+            </tr>
+        </table>    
+        <!-- event end -->
+    <br>
+         <!-- event start -->
+         <table>
+            <tr>
+                <td class="picpadding">
+                    <img src="https://ak.jogurucdn.com/media/image/p25/place-2017-02-21-6-80effa36ca60cc5b9e80ed13f81ae1ef.jpg" width="250" height="180" alt="picnic" >
+
+                </td>
+                <td class="needspace" style="text-align: 0;"> 
+                    <h2>A Stroll Along the Sea</h2> 
+                    <h3>Time: July 25st from 5 - 7 PM</h3>
+                    <h3>Meetup Location: 100 Parker Drive</h3>
+                    <p>We are first time event coordinators and would love to get to know you! We hope we can build community as well as share laughter and stories!  </p>
+                </td>
+                <td>
+                    <a href="success.html"><input type="button" value="Register" class="button"></a> 
+                </td>
+            </tr>
+        </table>    
+        <!-- event end -->
+  
+    <br>
+        <!-- event start -->
+        <table>
+            <tr>
+                <td class="picpadding">
+                    <img src="https://trcaca.s3.ca-central-1.amazonaws.com/app/uploads/2021/01/28183608/community-walking-groups.jpg" width="250" height="180" alt="picnic" >
+
+                </td>
+                <td class="needspace" style="text-align: 0;"> 
+                    <h2>Weekly Neighborhood Walk</h2> 
+                    <h3>Time: August 2nd from 5 - 7 PM</h3>
+                    <h3>Meetup Location: 122 Cook Street</h3>
+                    <p>Join us for our weekly evening walks! We will be walking and touring around the Bradly Neighbourhood. Meet new faces and make friends!   </p>
+                </td>
+                <td>
+                    <a href="success.html"><input type="button" value="Register" class="button"></a> 
+                </td>
+            </tr>
+        </table>    
+        <!-- event end -->
+    <br>
+</div>
+
+<script src="eventreserve.js"></script>
 </body>
+
 </html>

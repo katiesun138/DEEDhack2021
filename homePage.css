@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/15/1b/3e/151b3ef6fee45ef0a9a4c1e2526ece65.jpg);
+    background-repeat :no-repeat ;
+    background-size:cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 120px;
+}
+
+find/create{
+width: 382px;  
+overflow: hidden;  
+margin: auto;  
+margin: 20 0 0 450px;  
+padding: 80px;  
+justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+
+#fE{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 3px;  
+padding-left: 8px;  
+justify-content: center;
+text-align: center;
+}  
+
+#cE{  
+width: 300px;  
+height: 30px;  
+border: none;  
+border-radius: 3px;  
+padding-left: 8px;  
+justify-content: center;
+text-align: center;
+
+}  
+
+a{
+    text-align: center;
+}
+
+form {
+	display: inline-block;
+}
